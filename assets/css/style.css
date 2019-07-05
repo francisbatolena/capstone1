@@ -1,0 +1,424 @@
+/*@font-face {
+	font-family: "champ";
+	src: url(../fonts/Champagne.ttf);
+}
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Orbitron', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+
+/*landing page*/
+
+#main-logo {
+	width: 150px;
+	float: left;
+	position: absolute;
+	margin: 10px;
+}
+
+#jumbo-land {
+	height: 100vh;
+	background-image: none;
+	background-position: center;
+	background-size: cover;
+	border-radius: 0; /*removes jumbotron's rounded corners*/
+	padding-top: 20%;
+	background: transparent;
+	z-index: 5;
+}
+
+.jumbotron {
+	color: #f2f2f2; /*off-white*/
+	text-shadow: .25em .25em #333;
+	font-weight: bold;
+}
+
+.jumbotron h2 {
+	text-shadow: .1em .1em #333;
+}
+
+.jumbotron hr {
+	background-color: #fff;
+}
+
+.container p{
+	text-shadow: .1em .1em #333;
+}
+
+#home-link img{
+	width: 100px;
+}
+
+#icons a {
+	font-size: 3em;
+	margin: 0,3em;
+	color: rgba(0,191,255,.75);
+}
+
+#myCarousel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	height: 100vh;
+}
+
+#myCarousel .carousel-inner .carousel-item img{
+	height: 100vh;
+	width: 100%;
+}
+
+
+#back, #next {
+	z-index: 10;
+}
+
+
+/*end landing page*/
+
+
+#navbar {
+	background-color: rgba(0,191,255,.9);
+}
+
+#logo-home {
+	width: 3em;
+}
+
+/*home page*/
+
+#home-landing {
+	background-image: url(../images/house2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: #fff;
+	padding: 20%;
+	height: 100vh;
+}
+
+#home-landing h1 {
+	font-weight: bolder;
+	text-shadow: .1em .1em #333;
+}
+
+#quote {
+	margin-top: 3em;
+}
+
+#home-landing p, #home-landing small {
+	font-weight: bold;
+	text-shadow: .1em .1em #333;
+}
+
+#companyprofile {
+	background-color: lightgrey;
+	padding-bottom: 10%;
+/*	height: 100vh;*/
+}
+
+#companyprofile p{
+	background-color: rgba(245,245,245,.5);
+	width: 90%;
+	margin: 0 auto;
+}
+
+#recent {
+	padding-bottom: 10%
+}
+/*overlay*/
+
+.overlay {
+  position: relative;
+ }
+
+.photo {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;}
+
+.overlay-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover .photo {
+  opacity: 0.3;
+}
+
+.overlay:hover .overlay-text {
+  opacity: .75;
+  
+}
+
+.text {
+  background-color: #333;
+  color: white;
+  font-size: 1em;
+  padding: 1em 2em;
+}
+/*end overlay*/
+
+#services {
+	background-color: lightgrey;
+}
+
+#card-services {
+	margin-bottom: 1.25em;
+	height: 30em;
+}
+
+#card-services img {
+	height: 15em;
+}
+
+#services h3 {
+	font-size: 1em;
+}
+
+#services h2, #recent h2, #companyprofile h2{
+	font-size: 1.5em;
+}
+
+	
+/*end home page*/
+
+/*start about page*/
+#about-landing {
+	background-image: url(../images/team.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: #fff;
+	padding: 20%;
+	height: 100vh;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#about-landing h1 {
+	font-weight: bolder;
+	text-shadow: .1em .1em #333;
+}
+
+#architect {
+	height: 100%;
+	background-color: #333;
+	color: #fff;
+}
+
+#designer {
+	height: 100%;
+	background-color: #fff;
+	color: #333;
+}
+
+.members {
+	height: 30em;
+	margin: 0 auto;
+	border-radius: 1em;
+}
+
+#girl {
+	margin: 0;
+	width: 100%;
+}
+
+#girl img{
+	width: 15em;
+	height: 30em;
+}
+
+/*end about*/
+
+/*start contact*/
+
+#map {
+	height: 80vh;
+}
+
+#contact-form form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#contact {
+	font-size: 1.5em;
+}
+
+iframe {
+	display: block;
+	border:	none;
+	height: 80%;
+	width: 80%;
+	margin:	0 auto;
+}
+
+form {
+	font-size: 1em;
+}
+
+/*end contact*/
+
+/*start project*/
+
+#project-landing {
+	background-image: url(../images/projects.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: #fff;
+	padding: 20%;
+	height: 100vh;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#project-landing h1 {
+	font-weight: bolder;
+	text-shadow: .1em .1em #333;
+	font-size: 2.5em;
+}
+
+#gallery-items img {
+	height: 40vh;
+	width: 100%;
+
+}
+
+#gallery-items .card {
+	padding-top: 2em;
+}
+
+#gallery-items h3 {
+	padding-top: 1em;
+}
+
+
+/*end project*/
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+	background-color: rgba(0,191,255,.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile styles*/
+
+@media only screen and (max-width: 400px) {
+	#main-logo, #logo-home {
+		width: 50px;
+	}
+
+	#home-landing h1 {
+		font-size: x-large;
+	}
+
+	#projectpage h1 {
+		font-size: 2em;
+	}
+}
+
+/*tablet style*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	#main-logo, #logo-home{
+		width: 100px;
+	}
+}
+
+/*desktop style*/
+@media only screen and (min-width: 961px) {
+	#projectpage #right {
+		height: 100vh;
+	}
+}
