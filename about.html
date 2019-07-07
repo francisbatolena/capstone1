@@ -41,33 +41,39 @@
 	
 
 	
-		<nav id="navbar" class="navbar navabr-expand-lg navbar-light sticky-top py-0">
+		<nav id="navbar" class="navbar navabr-expand-lg navbar-light py-0 sticky-top">
 			<a id="logo-link" href="home.html" class="navbar-brand">
 				<img id="logo-home" src="assets/images/logo.png">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<!-- <span class="navbar-toggler-icon"></span> -->
-				<i class="fas fa-angle-double-down"></i>
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<div id="nav-icon2">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</button>
 
 			<div id="navbar-nav" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a href="home.html" class="nav-link">
+						<a href="home.html" class="nav-link animated fadeInRight">
 							Home
 						</a>
 					</li>
-					<li class="nav-item active">
-						<a href="about.html" class="nav-link">
+					<li class="nav-item ">
+						<a href="about.html" class="active nav-link animated fadeInRight">
 							About
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="projects.html" class="nav-link">
+						<a href="projects.html" class="nav-link animated fadeInRight">
 							Projects
 						</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item animated fadeInRight">
 						<a href="contact.html" class="nav-link">
 							Contact
 						</a>
@@ -79,9 +85,24 @@
 		<section id="architect" class="p-5">
 			<h2 class="mb-5">THE ARCHITECT</h2>
 			<div class="row">
+
 				<div class="col-12 col-md-6 col-lg-6">
-					<img class="members mb-5" src="assets/images/boy.jpg">
+					<div id="boy">
+						<div class="card">
+
+							<div class="front">
+								<img class="members mb-5" src="assets/images/guy.jpg">
+							</div>
+							<div class="back">
+								<div class="back-content border-0">
+									<img src="assets/images/qrclark.jpg" class="qrcode">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div> <!-- end left -->
+
+
 				<div class="col-12 col-md-6 col-lg-6">
 					<h3>Aldous Clark Batolena</h3>					
 					<p>Licensed Architect</p>
@@ -113,12 +134,22 @@
 					<small>Affiliations: Member, Philippine Institute of Interior Designers</small>
 					
 				</div> <!-- end left -->
-				<div id="members" class="col-12 col-md-6 col-lg-6">
+				
+				<div id="members" class="col-12 col-md-6 col-lg-6 float-right">
 					<div id="girl">
-						<img class="members mt-5 text-left" src="assets/images/girl.jpg" >
-					</div>
-				</div> <!-- end right -->
-			</div> <!-- end row -->			
+						<div class="card">
+							<div class="front">
+								<img class="members float-right" src="assets/images/lady.jpg">
+							</div>
+							<div class="back">
+								<div class="back-content float-right border-0">
+									<img src="assets/images/qrlouise.jpg"class="qrcode">
+								</div>
+							</div>
+						</div>
+					</div> <!-- end right -->
+				</div> <!-- end row -->
+			</div>			
 		</section>
 
 		<footer class="footer">
@@ -151,6 +182,9 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- external js -->
+	<script src="assets/js/capstone.js"></script>
 
 </body>
 </html>

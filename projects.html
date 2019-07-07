@@ -42,28 +42,35 @@
 			<a id="logo-link" href="home.html" class="navbar-brand">
 				<img id="logo-home" src="assets/images/logo.png">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<i class="fas fa-angle-double-down"></i>
+			<button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<div id="nav-icon2">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</button>
 
 			<div id="navbar-nav" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a href="home.html" class="nav-link">
+						<a href="home.html" class="nav-link animated fadeInRight">
 							Home
 						</a>
 					</li>
 					<li class="nav-item ">
-						<a href="about.html" class="nav-link">
+						<a href="about.html" class="nav-link animated fadeInRight">
 							About
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="projects.html" class="nav-link">
+						<a href="projects.html" class="nav-link active animated fadeInRight">
 							Projects
 						</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item animated fadeInRight">
 						<a href="contact.html" class="nav-link">
 							Contact
 						</a>
@@ -160,6 +167,41 @@
 			</div>
 		</div>
 
+		<div class="container my-5 p-2" id="main-slider">
+			<h2>Notable Projects</h2>
+			<p>Before and After</p>
+			<div id="slider-items" class="row">
+
+				<div class="containerslider col-12 col-md-6 col-lg-4 my-3">
+					<div class="imagebox imagebefore">
+						<img src="assets/images/before1.jpg">
+					</div>
+					<div class="imagebox imageafter">
+						<img src="assets/images/after1.jpg">
+					</div>
+				</div>
+				
+				<div class="containerslider col-12 col-md-6 col-lg-4 my-3">
+					<div class="imagebox imagebefore">
+						<img src="assets/images/before2.jpg">
+					</div>
+					<div class="imagebox imageafter">
+						<img src="assets/images/after2.jpg">
+					</div>
+				</div>
+
+				<div class="containerslider col-12 col-md-6 col-lg-4 my-3">
+					<div class="imagebox imagebefore">
+						<img src="assets/images/before3.jpg">
+					</div>
+					<div class="imagebox imageafter">
+						<img src="assets/images/after3.jpg">
+					</div>
+				</div>
+
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+	
 		<footer class="footer">
 			<p class="text-center p-3 mb-0">Francis Batolena | Zuitt Coding Bootcamp</p>
 		</footer>
@@ -176,6 +218,9 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- external js -->
+	<script src="assets/js/capstone.js"></script>
 
 </body>
 </html>
